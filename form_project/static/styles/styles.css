@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1{
+    color: #1a6338;
+}
+
+a{
+    text-decoration: none;
+    color: #1a6338;
+}
+
+button{
+    background-color: #258b50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1a6338;
+}
+
+/* Home Page */
+.centered-content{
+    height: 100hv;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn{
+    font-size: 16;
+    outline: none;
+}
+
+.logo{
+    width: 13%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 4p 8px rgb(0, 0, 0);
+    padding: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.success-message{
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    padding: 20px;
+}
+
+.success-message p{
+    margin: 20px 0;
+}
