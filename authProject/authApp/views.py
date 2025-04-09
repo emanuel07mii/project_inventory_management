@@ -36,16 +36,18 @@ def login_view(request):
             return redirect(next_url)
         else:
             error_message = 'Invalid Credentials!'
-    context = {'error': error_message}
-    return render(request, 'accounts/login.html', context)
+    else:
+        error_message = None
+    return render(request, 'accounts/login.html', {'error': error_message})
 
 @login_required
 def logout_view(request):
     if request.method == "POST":
+        return render(request, 'accounts/logout.html')
+    else:
         logout(request)
         return redirect('login')
-    else:
-        return redirect('home')
+        # return redirect('home')
 
 # Home view
 # Using the decorator
