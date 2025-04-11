@@ -4,7 +4,7 @@ from .models import Product
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        product = '__all__'
+        fields = '__all__'
         labels = {
             'product_id': 'Product ID',
             'name': 'Name',
