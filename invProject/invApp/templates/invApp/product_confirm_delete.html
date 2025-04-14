@@ -1,2 +1,39 @@
 <!-- Extends the base layout from the layout.html -->
 {% extends "invApp/layout.html" %}
+
+{% block title %} Delete Product {% endblock %}
+
+{% block content %}
+
+    <h1 class="text-center">Delete Product</h1>
+    <form class="text-center" method="post">
+        {% csrf_token %}
+        <table class="table table-bordered table-striped text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Product ID</th>
+                    <th>Name</th>
+                    <th>SKU</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Supplier</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ product.product_id }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.sku }}</td>
+                    <td>{{ product.price }}</td>
+                    <td>{{ product.quantity }}</td>
+                    <td>{{ product.supplier }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="text-center">Are you sure want to delete this product?</h2>
+
+        <button type="submit" class="btn btn-danger">Yes</button>
+        <a href="{% url 'product_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+
+{% endblock %}

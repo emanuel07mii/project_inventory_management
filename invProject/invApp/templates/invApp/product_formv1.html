@@ -1,0 +1,20 @@
+<!-- Extends the base layout from the layout.html -->
+{% extends "invApp/layout.html" %}
+
+{% block title %} Product Form {% endblock %}
+
+{% block content %}
+
+    <h1 class="text-center">Product Form</h1>
+    <div class="row col-12 justify-content-center">
+        <form method="POST" class="p-3 mt-5 col-12 col-md-8 col-lg-6">
+            {% csrf_token %}
+            {{form}}
+            <div class="container text-center">
+                <button class="btn btn-success btn-blcok" type="submit">Save Product</button>
+                <a href="{% url 'product_list' %}" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

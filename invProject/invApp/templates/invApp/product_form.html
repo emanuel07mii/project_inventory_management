@@ -1,16 +1,29 @@
-<!-- Extends the base layout from the layout.html -->
 {% extends "invApp/layout.html" %}
 
 {% block title %} Product Form {% endblock %}
 
 {% block content %}
 
-    <h1 class="text-center">Product Form</h1>
-    <form method="POST" class="jumbotron">
+<h1 class="text-center mt-4">Product Form</h1>
+<div class="row justify-content-center">
+    <form method="POST" class="p-4 mt-3 col-12 col-md-8 col-lg-6 shadow-sm border rounded bg-white">
         {% csrf_token %}
-        {{form}}
 
-        <button class="btn btn-success btn-blcok" type="submit">Save Product</button>
+        {% for field in form %}
+            <div class="mb-3">
+                <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+                {{ field }}
+                {% if field.errors %}
+                    <div class="text-danger small">{{ field.errors|striptags }}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+
+        <div class="text-center">
+            <button class="btn btn-success w-50" type="submit">Save Product</button>
+            <a href="{% url 'product_list' %}" class="btn btn-outline-secondary ms-2">Cancel</a>
+        </div>
     </form>
+</div>
 
 {% endblock %}

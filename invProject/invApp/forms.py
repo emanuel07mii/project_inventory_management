@@ -21,3 +21,8 @@ class ProductForm(forms.ModelForm):
             'quantity': forms.NumberInput(attrs={'placeholder': 'e.g. 10', 'class': 'form-control'}),
             'supplier': forms.TextInput(attrs={'placeholder': 'e.g. ABC Corp.', 'class': 'form-control'}),
         }
+
+        def __init__(self, *args, **kwargs):
+            super(ProductForm, self).__init__(*args, **kwargs)
+            for field in self.fields.values():
+                field.widget.attrs.update({'class': 'form-control'})
