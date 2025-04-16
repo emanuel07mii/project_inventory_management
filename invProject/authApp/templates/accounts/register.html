@@ -6,15 +6,14 @@
 {% block content %}
 
     <body>
-        <div class="container">
+        <div class="row col-12 justify-content-center">
             <h2>Register</h2>
-            <form method="post" action="{% url 'register' %}">
+            <form method="post" action="{% url 'register' %}" class="shadow p-3 mt-5 col-12 col-md-8 col-lg-4">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <button type="submit">Register</button>
+                <p>Do you have an account? <a href="{% url 'login' %}">Log in</a></p>
             </form>
-
-            <p>Do you have an account? <a href="{% url 'login' %}">Log in</a></p>
         </div>
     </body>
 

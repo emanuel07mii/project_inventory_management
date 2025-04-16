@@ -5,18 +5,16 @@
 
 {% block content %}
 
-    <body>
-        <div class="container">
-            <h2>Logout</h2>
-            <p>Are you sure you want to logout?</p>
-            <form method="get" action="{% url 'logout' %}">
-                {% csrf_token %}
-                <button type="submit">Logout</button>
-                <a href="{% url 'home' %}">Cancel</a>
-            </form>
-        </div>
-        
-        <script src="" async defer></script>
-    </body>
+    <div class="row col-12 justify-content-center">
+        <h2>Logout</h2>
+        <p>Are you sure you want to logout?</p>
+        <form method="post" action="{% url 'logout' %}" class="shadow p-3 mt-5 col-12 col-md-8 col-lg-4">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+            <a href="{% url 'home' %}">Cancel</a>
+        </form>
+    </div>
+    
+    <script src="" async defer></script>
 
 {% endblock %}

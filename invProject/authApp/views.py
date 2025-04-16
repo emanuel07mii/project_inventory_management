@@ -42,7 +42,7 @@ def login_view(request):
 
 @login_required
 def logout_view(request):
-    if request.method == "POST":
+    if request.method != "POST":
         return render(request, 'accounts/logout.html')
     else:
         logout(request)

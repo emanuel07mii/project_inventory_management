@@ -1,12 +1,31 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    padding-top: 56px;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
 }
 
 .container {
@@ -52,4 +71,29 @@ button:hover {
 .error {
     color: red;
     margin-top: 10px;
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+  
+.alert-success {
+background-color: #4CAF50;
+}
+
+.alert-error,
+.alert-danger {
+background-color: #f44336;
+}
+
+.alert-info {
+background-color: #2196F3;
+}
+
+.alert-warning {
+background-color: #ff9800;
 }

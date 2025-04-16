@@ -4,7 +4,7 @@ from .models import Product
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = '__all__'
+        exclude = ['owner', 'product_id'] # para não mostrar os campos no formulário
         labels = {
             'product_id': 'Product ID',
             'name': 'Name',
@@ -22,7 +22,7 @@ class ProductForm(forms.ModelForm):
             'supplier': forms.TextInput(attrs={'placeholder': 'e.g. ABC Corp.', 'class': 'form-control'}),
         }
 
-        def __init__(self, *args, **kwargs):
-            super(ProductForm, self).__init__(*args, **kwargs)
-            for field in self.fields.values():
-                field.widget.attrs.update({'class': 'form-control'})
+    def __init__(self, *args, **kwargs):
+        super(ProductForm, self).__init__(*args, **kwargs)
+        for field in self.fields.values():
+            field.widget.attrs.update({'class': 'form-control'})
