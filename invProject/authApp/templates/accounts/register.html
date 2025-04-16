@@ -1,14 +1,14 @@
 {% extends "shared/layout.html" %}
 {% load static %}
 
-{% block title %} Login {% endblock %}
+{% block title %} Register {% endblock %}
 
 {% block content %}
 
     <body>
         <div class="row col-12 justify-content-center">
-            <h2>Register</h2>
             <form method="post" action="{% url 'register' %}" class="shadow p-3 mt-5 col-12 col-md-8 col-lg-4">
+                <h2>Register</h2>
                 {% csrf_token %}
                 {{ form.as_p }}
                 <button type="submit">Register</button>

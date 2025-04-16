@@ -1,0 +1,243 @@
+[
+    {
+      "model": "invApp.product",
+      "pk": 18,
+      "fields": {
+        "name": "White Shirt",
+        "sku": "CB001",
+        "price": 49.9,
+        "quantity": 10,
+        "supplier": "NIKE",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 19,
+      "fields": {
+        "name": "Jeans Pants",
+        "sku": "CJ002",
+        "price": 89.9,
+        "quantity": 15,
+        "supplier": "ADIDAS",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 20,
+      "fields": {
+        "name": "Running Shoes",
+        "sku": "TE003",
+        "price": 149.99,
+        "quantity": 8,
+        "supplier": "PUMA",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 21,
+      "fields": {
+        "name": "Denim Jacket",
+        "sku": "JJ004",
+        "price": 199.9,
+        "quantity": 5,
+        "supplier": "ADIDAS",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 22,
+      "fields": {
+        "name": "Blue Cap",
+        "sku": "BA005",
+        "price": 29.9,
+        "quantity": 20,
+        "supplier": "NIKE",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 23,
+      "fields": {
+        "name": "Hoodie",
+        "sku": "BM006",
+        "price": 119.9,
+        "quantity": 12,
+        "supplier": "PUMA",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 24,
+      "fields": {
+        "name": "Black T-Shirt",
+        "sku": "CP007",
+        "price": 39.9,
+        "quantity": 25,
+        "supplier": "NIKE",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 25,
+      "fields": {
+        "name": "White Socks",
+        "sku": "MB008",
+        "price": 9.9,
+        "quantity": 100,
+        "supplier": "ADIDAS",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 26,
+      "fields": {
+        "name": "Leather Belt",
+        "sku": "CC009",
+        "price": 59.9,
+        "quantity": 10,
+        "supplier": "PUMA",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 27,
+      "fields": {
+        "name": "Denim Shorts",
+        "sku": "BJ010",
+        "price": 69.9,
+        "quantity": 18,
+        "supplier": "ADIDAS",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 28,
+      "fields": {
+        "name": "Casual Sneakers",
+        "sku": "TC011",
+        "price": 129.9,
+        "quantity": 7,
+        "supplier": "NIKE",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 29,
+      "fields": {
+        "name": "Sport Watch",
+        "sku": "RE012",
+        "price": 299.9,
+        "quantity": 4,
+        "supplier": "PUMA",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 30,
+      "fields": {
+        "name": "Sunglasses",
+        "sku": "OS013",
+        "price": 89.9,
+        "quantity": 9,
+        "supplier": "NIKE",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 31,
+      "fields": {
+        "name": "Leather Wallet",
+        "sku": "CC014",
+        "price": 79.9,
+        "quantity": 6,
+        "supplier": "ADIDAS",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 32,
+      "fields": {
+        "name": "Graphic T-Shirt",
+        "sku": "CE015",
+        "price": 44.9,
+        "quantity": 30,
+        "supplier": "PUMA",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 33,
+      "fields": {
+        "name": "Kangaroo Hoodie",
+        "sku": "MC016",
+        "price": 109.9,
+        "quantity": 14,
+        "supplier": "NIKE",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 34,
+      "fields": {
+        "name": "Basic Tank Top",
+        "sku": "RB017",
+        "price": 24.9,
+        "quantity": 40,
+        "supplier": "PUMA",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 35,
+      "fields": {
+        "name": "Dress Shirt",
+        "sku": "CS018",
+        "price": 99.9,
+        "quantity": 11,
+        "supplier": "ADIDAS",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 36,
+      "fields": {
+        "name": "Sweatpants",
+        "sku": "CM019",
+        "price": 89.9,
+        "quantity": 17,
+        "supplier": "NIKE",
+        "owner": 1
+      }
+    },
+    {
+      "model": "invApp.product",
+      "pk": 37,
+      "fields": {
+        "name": "Zipper Jacket",
+        "sku": "CZ020",
+        "price": 189.9,
+        "quantity": 3,
+        "supplier": "PUMA",
+        "owner": 1
+      }
+    }
+  ]
+  

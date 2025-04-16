@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
@@ -35,10 +36,8 @@ def login_view(request):
             next_url = request.POST.get('next') or request.GET.get('next') or 'home'
             return redirect(next_url)
         else:
-            error_message = 'Invalid Credentials!'
-    else:
-        error_message = None
-    return render(request, 'accounts/login.html', {'error': error_message})
+            messages.error(request,'Invalid Credentials!')
+    return render(request, 'accounts/login.html')
 
 @login_required
 def logout_view(request):
