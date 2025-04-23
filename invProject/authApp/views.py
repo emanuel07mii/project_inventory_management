@@ -47,18 +47,3 @@ def logout_view(request):
         logout(request)
         return redirect('login')
         # return redirect('home')
-
-# # Home view
-# # Using the decorator
-# @login_required
-# def home_view(request):
-#     return render(request, 'auth1_app/home.html')
-
-# # Protected View
-# class ProtectedView(LoginRequiredMixin, View):
-#     login_url = '/login/'
-#     # 'next' - to redirect URL
-#     redirect_field_name = 'redirect_to'
-    
-#     def get(self, request):
-#         return render(request, 'registration/protected.html')
