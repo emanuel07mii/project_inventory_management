@@ -4,6 +4,9 @@ from .forms import ProductForm
 from .models import Product
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
+from django.views.decorators.csrf import csrf_exempt
+from django.db.models import Q
+from django.http import JsonResponse
 
 # CRUD = Create, Read, Update, delete
 
@@ -59,3 +62,26 @@ def product_delete_view(request, product_id):
         messages.error(request, 'Product delete successfully!')
         return redirect('product_list')
     return render(request, 'invApp/product_confirm_delete.html', {'product': product})
+
+@csrf_exempt
+def search_products(request):
+    query = request.GET.get("q", "")
+    products = Product.objects.filter(
+        Q(name__icontains=query) |
+        Q(sku__icontains=query) |
+        Q(supplier__icontains=query)
+    )
+
+    results = [
+        {
+            "product_id": p.product_id,
+            "name": p.name,
+            "sku": p.sku,
+            "price": p.price,
+            "quantity": p.quantity,
+            "supplier": p.supplier
+        }
+        for p in products
+    ]
+
+    return JsonResponse({"products": results})
