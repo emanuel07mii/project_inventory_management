@@ -101,3 +101,9 @@ background-color: #2196F3;
 .alert-warning {
 background-color: #ff9800;
 }
+
+.highlight {
+    background-color: #ffe58a;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
