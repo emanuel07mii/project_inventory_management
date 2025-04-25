@@ -102,8 +102,10 @@ background-color: #2196F3;
 background-color: #ff9800;
 }
 
+/* #fff3cd  */
 .highlight {
-    background-color: #ffe58a;
     font-weight: bold;
-    transition: background-color 0.2s ease;
+    background-color: #ffe58a;
+    padding: 2px 4px;
+    border-radius: 3px;
 }
