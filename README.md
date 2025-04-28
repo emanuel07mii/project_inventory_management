@@ -17,6 +17,14 @@ Além disso, também foram aplicadas boas práticas de organização de projeto,
 
 ---
 
+## 📂 Funcionalidades
+
+- ✅ Cadastro de produtos
+- ✅ Atualização e exclusão de produtos
+- ✅ Pesquisa dinâmica na listagem de produtos
+- ✅ Autenticação de usuários (login, logout, registro)
+- ✅ Painel de administração do Django
+
 ## 🚀 Como Rodar o Projeto
 
 Siga os passos abaixo para clonar e executar o projeto localmente:
@@ -25,6 +33,9 @@ Siga os passos abaixo para clonar e executar o projeto localmente:
 
 ```bash
 git clone https://github.com/emanuel07mii/project_inventory_management.git
+```
+- Acesse a pasta raiz do projeto
+```bash
 cd project_inventory_management
 ```
 
@@ -54,14 +65,21 @@ source venv/bin/activate
 ```
 ### 5. Instale as dependências do projeto
 ```bash
-pip install django
-pip install django-crispy-forms crispy-bootstrap5
+pip install django django-crispy-forms crispy-bootstrap5
 ```
-### 6. Rode as migrações
+### 6. Acesse a pasta principal do projeto
+```bash
+cd invProject
+```
+### 7. Rode as migrações
 ```bash
 python manage.py migrate
 ```
-### 7. Inicie o servidor de desenvolvimento
+### 8. Crie um superusuário (Opcional)
+```bash
+python manage.py createsuperuser
+```
+### 9. Inicie o servidor de desenvolvimento
 ```bash
 python manage.py runserver
 ```
